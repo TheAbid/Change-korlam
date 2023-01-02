@@ -8,5 +8,20 @@
   </head>
   <body>
     <h2>I am Heregit</h2>
+    <script>
+        function setAlarm(time) {
+  var currentTime = new Date().getTime();
+  var alarmTime = new Date(time).getTime();
+  var timeToAlarm = alarmTime - currentTime;
+  
+  setTimeout(function() {
+    alert("Wake up!");
+  }, timeToAlarm);
+}
+
+// To set the alarm, pass a string representation of the desired time to the function
+setAlarm("Jan 3, 2023 15:00:00"); // alarm will go off on January 3rd at 15:00
+
+    </script>
   </body>
 </html>
