@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Add some styling to the page */
+      body {
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* Add animation to the ball */
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-50px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      /* Style the ball */
+      .ball {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: red;
+        animation: bounce 1s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Add the ball to the page -->
+    <div class="ball"></div>
+  </body>
+</html>
